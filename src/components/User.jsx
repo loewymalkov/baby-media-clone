@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 function User(props){
  
-    return (
-      <div>
-           <style jsx>{`
+  return (
+    <div>
+      <style jsx>{`
           div {
             background-color: light blue;
             padding: 10px;
@@ -20,19 +20,19 @@ function User(props){
         }
         `}</style>
          
-        <img src={props.images} height="50px"/>
-        <h1>{props.names}</h1>
-        <button className="btn btn-primary">Add friend</button>
-        <hr/>
+      <img src={props.images} height="50px"/>
+      <h1>{props.names}</h1>
+      <button className="btn btn-primary">Add friend</button>
+      <hr/>
      
        
-      </div>
-    );
-  }
+    </div>
+  );
+}
   
 User.propTypes = {
-    images: PropTypes.string,
-    names: PropTypes.string,
+  images: PropTypes.string,
+  names: PropTypes.string,
   
   
 };

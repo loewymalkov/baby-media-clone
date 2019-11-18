@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 function Navbar() {
-    return (
-        <div>
-            <style jsx>{`
+  return (
+    <div>
+      <style jsx>{`
           div {
             
         }
@@ -27,19 +27,19 @@ function Navbar() {
             
         }
         `}</style>
-            <div className="main">
-                <button className="btn btn-danger">Home</button>
-                <button className="btn btn-danger">Profile</button>
-                <button className="btn btn-danger">Messages</button>
-            </div>
-            <div className="searchTweet">
-                <input className="search" placeholder="search"></input>
-                <input className="tweet" placeholder="Tweet"></input>
-            </div>
-            <div className="feed">
-                <input className="feed" placeholder="What's happening"></input>
-            </div>
-        </div>
-    );
+      <div className="main">
+        <button className="btn btn-danger">Home</button>
+        <button className="btn btn-danger">Profile</button>
+        <button className="btn btn-danger">Messages</button>
+      </div>
+      <div className="searchTweet">
+        <input className="search" placeholder="search"></input>
+        <input className="tweet" placeholder="Tweet"></input>
+      </div>
+      <div className="feed">
+        <input className="feed" placeholder="What's happening"></input>
+      </div>
+    </div>
+  );
 }
 export default Navbar;

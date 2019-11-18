@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 function Profile(props){
-    return (
-      <div>
-           <style jsx>{`
+  return (
+    <div>
+      <style jsx>{`
           
         img {
             border: solid grey;
@@ -13,17 +13,17 @@ function Profile(props){
         }
        
         `}</style>
-         <img src={props.images} height="150px"/>
-        <h1>{props.names}</h1>
-      </div>
+      <img src={props.images} height="150px"/>
+      <h1>{props.names}</h1>
+    </div>
       
       
-    );
-  }
+  );
+}
   
 Profile.propTypes = {
-    images: PropTypes.string,
-    names: PropTypes.string,
+  images: PropTypes.string,
+  names: PropTypes.string,
 
   
 };

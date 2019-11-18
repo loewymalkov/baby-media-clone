@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 function NewsFeed(props) {
 
   return (
     <div>
-     <style jsx>{`
+      <style jsx>{`
           div {
             background-color: light blue;
         }
