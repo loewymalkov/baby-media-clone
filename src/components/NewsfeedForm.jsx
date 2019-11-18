@@ -9,7 +9,7 @@ function NewsfeedForm(props){
 
   function handleNewfeedFormSubmission(event) {
     event.preventDefault();
-    props.onNewNewsfeedCreation({images: _images.value, names: _names.value, bio: bio.value, id: v4()});
+    props.onNewNewsfeedCreation({images: _images.value, names: _names.value, bio: _bio.value, id: v4()});
     _images.value = '';
     _names.value = '';
     _bio.value = '';
@@ -29,7 +29,7 @@ function NewsfeedForm(props){
         <input 
           type = 'text'
           placeholder = 'About'
-          ref={(input) => {_bio = textarea;}}/>
+          ref={(textarea) => {_bio = textarea;}}/>
         <button type='submit'>Enter profile</button>
       </form>
     </div>

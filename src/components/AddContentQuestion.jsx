@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 function AddContentQuestion(props) {
   return (
     <div>
+      <p>Click on add content to enter a newsfeed story</p>
       <button onClick={props.onAddConfirmation}>Add Content</button>
     </div>
   );

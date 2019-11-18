@@ -49,17 +49,16 @@ class App extends React.Component {
         <Navbar/>
         <hr/>
         <div className="row">
-          <Switch>
-            <div className="col-md-4"><ProfileList/> <Bio/>
+          <div className="col-md-4"><ProfileList/> <Bio/>
+          </div>
+          <div className="col-md-5"><Switch> 
+            <Route path='/newcontent' render={()=><NewsfeedControl onNewNewsfeedCreation={this.handleAddNewContentToList} />} /> 
+            <Route exact path='/newcontent' render={()=><NewsfeedList newsfeedList={this.state.masterNewsfeedList}/> }/>
+            </Switch>
             </div>
-            <div className="col-md-5"><Route exact path='/' render={()=><NewsfeedList newsfeedList={this.state.masterNewsfeedList}/> }/> 
-              <Route path='/newcontent' render={()=><NewsfeedControl onNewNewsfeedCreation={this.handleAddNewContentToList} />} /> </div>
-            <div className="col-md-2"><UserList/></div>
-          </Switch>
+          <div className="col-md-2"><UserList/></div>
         </div>
       </div>
-          
-         
     );
   }
 }

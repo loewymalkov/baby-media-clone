@@ -28,6 +28,7 @@ class NewsfeedControl extends React.Component {
     return (
       <div>
         {currentlyVisibleContent}
+        <hr/>
       </div>
     );
   }

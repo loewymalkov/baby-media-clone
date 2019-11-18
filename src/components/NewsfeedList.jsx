@@ -6,9 +6,9 @@ function NewsfeedList(props){
   console.log(props.newsfeedList);
   return (
     <div>
-      {[props.newsfeedList].map((newsfeed) =>
+      <hr/>
+      {props.newsfeedList.map((newsfeed) =>
         <NewsFeed images={newsfeed.images}
-          
           names={newsfeed.names}
           bio={newsfeed.bio}
           key={newsfeed.id}/>
@@ -24,11 +24,7 @@ NewsfeedList.propTypes = {
 export default NewsfeedList;
 
 
-// import React from 'react';
-// import Newsfeed from './Newsfeed';
 
-
-// var masterNewsfeedList = [
 //   {
 //     images: 'http://images.agoramedia.com/wte3.0/gcms/babys-first-words-722x406.jpg?width=414',
 //     names: 'Thato',
@@ -46,22 +42,5 @@ export default NewsfeedList;
 //     names: 'Imani',
 //     bio: ' Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
     
-//   }
-// ];
 
-// function NewsfeedList(){
-//   return (
-//     <div>
-//       {masterNewsfeedList.map((newsfeed, index) =>
-//         <Newsfeed images={newsfeed.images}
-          
-//           names={newsfeed.names}
-//           bio={newsfeed.bio}
-//           key={index}/>
-//       )}
-//     </div>
-//   );
-// }
-  
-// export default NewsfeedList;
  
