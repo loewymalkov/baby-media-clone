@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
 function NewsfeedForm(props){
   let _images = null;
   let _names = null;
   let _bio = null;
 
-  function handleNewfeedFormSubmission(event) {
+  function handleNewsfeedFormSubmission(event) {
     event.preventDefault();
     props.onNewNewsfeedCreation({images: _images.value, names: _names.value, bio: _bio.value, id: v4()});
     _images.value = '';
@@ -17,7 +18,7 @@ function NewsfeedForm(props){
 
   return (
     <div>
-      <form onSubmit = {handleNewfeedFormSubmission}>
+      <form onSubmit = {handleNewsfeedFormSubmission}>
         <input 
           type = 'text'
           placeholder = 'Image URL'
@@ -31,7 +32,10 @@ function NewsfeedForm(props){
           placeholder = 'About'
           ref={(textarea) => {_bio = textarea;}}/>
         <button type='submit'>Enter profile</button>
-      </form>
+      </form> 
+      <hr/>
+
+      <Link to='/'>Newsfeed</Link> 
     </div>
   );
 }

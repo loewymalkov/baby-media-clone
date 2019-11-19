@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsFeed from './NewsFeed';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function NewsfeedList(props){
   console.log(props.newsfeedList);
@@ -13,6 +14,8 @@ function NewsfeedList(props){
           bio={newsfeed.bio}
           key={newsfeed.id}/>
       )}
+ 
+      <Link to="/newcontent">Add Content</Link>
     </div>
   );
 }

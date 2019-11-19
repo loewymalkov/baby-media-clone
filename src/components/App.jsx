@@ -51,11 +51,12 @@ class App extends React.Component {
         <div className="row">
           <div className="col-md-4"><ProfileList/> <Bio/>
           </div>
-          <div className="col-md-5"><Switch> 
-            <Route path='/newcontent' render={()=><NewsfeedControl onNewNewsfeedCreation={this.handleAddNewContentToList} />} /> 
-            <Route exact path='/newcontent' render={()=><NewsfeedList newsfeedList={this.state.masterNewsfeedList}/> }/>
+          <div className="col-md-5">
+            <Switch> 
+              <Route path='/newcontent' render={()=><NewsfeedControl onNewNewsfeedCreation={this.handleAddNewContentToList} /> }/> 
+              <Route exact path='/' render={()=><NewsfeedList newsfeedList={this.state.masterNewsfeedList}/> }/>
             </Switch>
-            </div>
+          </div>
           <div className="col-md-2"><UserList/></div>
         </div>
       </div>

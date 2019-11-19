@@ -23,7 +23,10 @@ class NewsfeedControl extends React.Component {
       currentlyVisibleContent = <NewsfeedForm onNewNewsfeedCreation = {this.props.onNewNewsfeedCreation}/>;
     } else {
       currentlyVisibleContent = <AddContentQuestion onAddConfirmation = {this.handleAddContentConfirmation}/>;
-    }
+    } 
+    // if (this.state.formVisibleOnPage) {
+    //   currentlyVisibleContent = <NewsfeedList newsfeedList = {this.newsfeedList}/>;
+    // }
 
     return (
       <div>
